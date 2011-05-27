@@ -6,25 +6,27 @@ package primkruskal;
  * @author herkko
  */
 public class Vieruslista {
-Kaari[][] lista;
+Vierusalkio[] lista;
 int top;
 
 
     public void vieruslista(){
-    lista = new Kaari[1000][1000];
+    lista = new Vierusalkio[1000];
 
     }
 
+    public void uusiSolmu(Solmu uusiSolmu){
+    //lisätään aloitus ja lopetuskohtiin samat kaaret, jotta taulu pysyy sellaisena että molempiin suuntiin pääsee
+    int aloituskohta = (uusiSolmu.getParent()).getNimi();
+    (lista[aloituskohta]).lisaaAlkio(uusiSolmu);
 
-    public void uusiKaari(Kaari uusikaari){
-    int aloituskohta = uusikaari.getAloitus();
-    lista[aloituskohta][1] = uusikaari;
-
+    int lopetuskohta = uusiSolmu.getNimi();
+    (lista[lopetuskohta]).lisaaAlkio(uusiSolmu);
     }
 
-    public void uusiSolmu(){
-    top++;
-    
+    public Kaari getKaari(int aloituskohta){
+    Kaari palautettava = (lista[aloituskohta]).getSeuraavaKaari();
+    return palautettava;
     }
 
 

@@ -25,6 +25,13 @@ public class Solmu {
     return this.paikkaKeossa;
     }
 
+    public Solmu getParent(){
+    return this.parent;
+    }
+    public int getNimi(){
+    return tunnus;
+    }
+
     public void setEtaisyys(int etaisyys){
     etaisyysverkkoon = etaisyys;
     }

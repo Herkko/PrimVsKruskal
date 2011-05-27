@@ -27,6 +27,10 @@ public class Kaari {
     return this.aloituskohta;
     }
 
+    public int getLopetus(){
+    return this.lopetuskohta;
+    }
+
     public int getPaino(){
     return this.kaaripaino;
     }

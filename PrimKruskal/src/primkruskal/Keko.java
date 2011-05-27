@@ -10,20 +10,21 @@ public class Keko {
 Solmu[] keko;
 int top;
 int heapSize;
+Solmu[] solmulista;
 
 
     public void keko(){
     heapSize = 1000;
     keko = new Solmu[heapSize];
     top=0;
-    
+    solmulista = new Solmu[heapSize];
     }
 
-    public void luokeko(int maara){
+    public void keko(int maara){
     heapSize = maara;
     keko = new Solmu[heapSize];
     top=0;
-    
+    solmulista = new Solmu[heapSize];
     }
 
     //onko tarvetta  palauttaa olio vai pelkästään arvo?
@@ -32,8 +33,12 @@ int heapSize;
    Solmu minimi = keko[1];
    keko[1] = keko[top];
    top--;
+   
+   //Toimiiko oikeasti?
+   int poistettava = minimi.tunnus;
+   solmulista[poistettava] = null;
    heapify(1);
-   tulostaKeko();
+
    return minimi.getEtaisyys();
    }
 
@@ -65,21 +70,31 @@ int heapSize;
     }
 
     public void insert(Solmu uusisolmu){
-    if (uusisolmu.getPaikka()<Integer.MAX_VALUE){
-    // solmu on jo keossa
-   
+    int solmuTunnus = uusisolmu.getNimi();
+    if (solmulista[solmuTunnus] != null){
+      // update uusisolmu();
+        // not yet implemented
+    }
 
+    else{
+    top++;
+    keko[top] = uusisolmu;
+    int solmu=top;
+    int solmuParent = ((keko[top]).getParent()).getPaikka();
+    Solmu vertailtavalapsi = keko[top];
+    Solmu vertailtavaParent = keko[solmuParent];
+     while (vertailtavalapsi.getEtaisyys() > vertailtavaParent.getEtaisyys()){
+         swap(vertailtavalapsi.paikkaKeossa, vertailtavaParent.paikkaKeossa);
+         int uusiVanhempi= ((vertailtavalapsi.paikkaKeossa)/2);
+     }
 
     }
-        else{
-        top++;
-        keko[top] = uusisolmu;
-       
-        }
     }
 
     private void swap(int solmu, int lapsi) {
     Solmu valiaikainen = keko[lapsi];
+    valiaikainen.setPaikkakeossa(solmu); //paivitetaan paikkakeossa arvoa.
+    (keko[solmu]).setPaikkakeossa(lapsi);
     keko[lapsi] = keko[solmu];
     keko[solmu] = valiaikainen;
 
@@ -92,5 +107,11 @@ int heapSize;
     }
     }
 
+
+    public void lisaaKaariKekoon(Kaari lisattava){
+    Kaari.
+
+
+    }
 
 }
