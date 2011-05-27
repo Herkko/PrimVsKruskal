@@ -37,34 +37,55 @@ public class KekoTest {
     public void tearDown() {
     }
 
-   
+
+
+    @Test
+    public void testLuoKeko(){
+    Keko uusiKeko = new Keko();    
+    }
+
     /**
      * Test of PoistaMinimi method, of class Keko.
      */
-    @Test
-    public void testPoistaMinimi() {
-        System.out.println("PoistaMinimi");
-        Keko instance = new Keko();
-        Solmu testisolmu = new Solmu();
-        testisolmu.setEtaisyys(2);
+//    @Test
+//    public void testPoistaMinimi() {
+//        System.out.println("PoistaMinimi");
+//        Keko instance = new Keko();
+//        Solmu testisolmu = new Solmu();
+//        testisolmu.setEtaisyys(2);
+//
+//        int expResult = 2;
+//        int result = instance.PoistaMinimi();
+//        assertEquals(expResult, result);
+//
+//    }
 
-        int expResult = 2;
-        int result = instance.PoistaMinimi();
-        assertEquals(expResult, result);
-              
-    }
 
-    /**
-     * Test of insert method, of class Keko.
-     */
-    @Test
+
+
+
+   @Test
     public void testInsert() {
         System.out.println("insert");
-        Solmu uusisolmu = null;
+        Solmu uusisolmu = new Solmu();
+        uusisolmu.etaisyysverkkoon=4;
+        uusisolmu.setNimi(2);
+
+
         Keko instance = new Keko();
         instance.insert(uusisolmu);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        instance.tulostaKeko();
     }
+
+//    @Test
+//    public void testUpdate() {
+//        System.out.println("insert");
+//        Solmu uusisolmu = null;
+//        Keko instance = new Keko();
+//        instance.insert(uusisolmu);
+//        // TODO review the generated test code and remove the default call to fail.
+//        fail("The test case is a prototype.");
+//    }
+
 
 }

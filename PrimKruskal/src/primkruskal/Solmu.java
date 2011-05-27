@@ -12,9 +12,14 @@ public class Solmu {
     Solmu parent;
 
 
-    public void Solmu(int nimi){
+    public void Solmu(){
+    
+    }
+
+    public void solmu(int nimi){
     tunnus = nimi;
     paikkaKeossa = Integer.MAX_VALUE; // onko paras mahdollinen valinta
+    parent = null;
     }
 
     public int getEtaisyys(){
@@ -39,5 +44,11 @@ public class Solmu {
     public void setPaikkakeossa(int paikka){
     this.paikkaKeossa = paikka;    
     }
+
+    public void setNimi(int nimi){
+    this.tunnus = nimi;    
+    }
+
+  
 
 }

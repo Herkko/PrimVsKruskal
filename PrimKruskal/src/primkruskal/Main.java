@@ -10,7 +10,11 @@ public class Main {
 
 
     public static void main(String[] args) {
-        // TODO code application logic here
+    Keko testikeko = new Keko();
+    Solmu testisolmu = new Solmu();
+    testisolmu.etaisyysverkkoon=4;
+   testikeko.insert(testisolmu);
+
 
         
     }

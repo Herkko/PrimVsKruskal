@@ -7,20 +7,25 @@ package primkruskal;
  */
 
 public class Keko {
-Solmu[] keko;
+Solmu[] keko = new Solmu[100];
 int top;
 int heapSize;
 Solmu[] solmulista;
+int solmujenmaara=0;
 
 
-    public void keko(){
+    public void Keko(){
     heapSize = 1000;
     keko = new Solmu[heapSize];
-    top=0;
+    top=1;
     solmulista = new Solmu[heapSize];
+    Solmu parent = new Solmu();
+    parent.setPaikkakeossa(0);
+    parent.setEtaisyys(1000);
+    keko[0] = parent;
     }
 
-    public void keko(int maara){
+    public void Keko(int maara){
     heapSize = maara;
     keko = new Solmu[heapSize];
     top=0;
@@ -71,36 +76,49 @@ Solmu[] solmulista;
 
     public void insert(Solmu uusisolmu){
     int solmuTunnus = uusisolmu.getNimi();
-    if (solmulista[solmuTunnus] != null){
-      // update uusisolmu();
-        // not yet implemented
-    }
+//    if (solmulista[solmuTunnus] != null){
+//       updateSolmu(uusisolmu);
+//        }
+//
+//    else{
 
-    else{
+    if (solmujenmaara>0){
+
+
+
     top++;
     keko[top] = uusisolmu;
     int solmu=top;
-    int solmuParent = ((keko[top]).getParent()).getPaikka();
+    int solmuParent = top/2; // jos eka, niin ei parenttia. null pointter
+
     Solmu vertailtavalapsi = keko[top];
     Solmu vertailtavaParent = keko[solmuParent];
-     while (vertailtavalapsi.getEtaisyys() > vertailtavaParent.getEtaisyys()){
+
+    while ((vertailtavalapsi.getEtaisyys()) > (vertailtavaParent.getEtaisyys()) && (vertailtavaParent.getPaikka())>1){
          swap(vertailtavalapsi.paikkaKeossa, vertailtavaParent.paikkaKeossa);
          int uusiVanhempi= ((vertailtavalapsi.paikkaKeossa)/2);
+         vertailtavaParent = keko[uusiVanhempi];
      }
 
+     }
+    else {
+    keko[top] =uusisolmu;
+    top++;
     }
     }
 
     private void swap(int solmu, int lapsi) {
     Solmu valiaikainen = keko[lapsi];
+
     valiaikainen.setPaikkakeossa(solmu); //paivitetaan paikkakeossa arvoa.
     (keko[solmu]).setPaikkakeossa(lapsi);
+
     keko[lapsi] = keko[solmu];
     keko[solmu] = valiaikainen;
 
     }
 
-    private void tulostaKeko(){
+    public void tulostaKeko(){
 
     for (int i=0; i<top; i++){
         System.out.println((keko[i]).getEtaisyys());
@@ -108,8 +126,22 @@ Solmu[] solmulista;
     }
 
 
-    public void lisaaKaariKekoon(Kaari lisattava){
-    Kaari.
+    private void updateSolmu(Solmu uusiSolmu) {
+    int solmutunnus = uusiSolmu.getNimi();
+    Solmu paivitettava = solmulista[solmutunnus];
+
+    if (paivitettava.etaisyysverkkoon > uusiSolmu.etaisyysverkkoon ){
+    paivitettava.etaisyysverkkoon = uusiSolmu.etaisyysverkkoon;
+
+    Solmu paivitettavaParent = paivitettava.getParent();
+
+        
+        while (paivitettavaParent.getEtaisyys() < paivitettava.getEtaisyys() && paivitettava.paikkaKeossa>1){
+        swap(paivitettava.paikkaKeossa, paivitettavaParent.paikkaKeossa);
+        }
+
+    }
+
 
 
     }

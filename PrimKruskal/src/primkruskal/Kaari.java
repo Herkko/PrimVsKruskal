@@ -12,7 +12,7 @@ package primkruskal;
 public class Kaari {
 
     int kaaripaino;
-    int etaisyys;
+    
     int aloituskohta;
     int lopetuskohta;
 
@@ -35,7 +35,5 @@ public class Kaari {
     return this.kaaripaino;
     }
 
-    public void setEtaisyys(int etaisyys){
-    this.etaisyys = etaisyys;
-    }
+   
 }
