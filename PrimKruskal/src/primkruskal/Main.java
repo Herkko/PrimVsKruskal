@@ -11,19 +11,18 @@ public class Main {
 
     public static void main(String[] args) {
   
-    Solmu[] taulu = new Solmu[10];
-    
-    if (taulu[1] ==  null){
-    System.out.println("toimii");    
-    }
+        System.out.println("poistetaan kruskal keosta solmu");
+        Keko instance = new Keko();
 
-//        Keko testikeko = new Keko();
-//    Solmu testisolmu = new Solmu();
-//    testisolmu.setNimi(2);
-//    testisolmu.etaisyysverkkoon=4;
-//   testikeko.insert(testisolmu);
-//
-
+        for (int i=1; i<14; i++){
+        Solmu uusisolmu = new Solmu();
+        uusisolmu.setEtaisyys(100-(i*4));
+        uusisolmu.setNimi(i);
+        instance.KruskalInsert(uusisolmu);
+        }
+        instance.tulostaKeko();
+        instance.PoistaMinimi();
+        instance.tulostaKeko();
         
     }
 

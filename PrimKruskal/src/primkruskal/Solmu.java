@@ -9,8 +9,8 @@ public class Solmu {
     int tunnus;
     int etaisyysverkkoon;
     int paikkaKeossa;
+    int parentTunnus;
     Solmu parent;
-
 
     public void Solmu(){
     
@@ -18,7 +18,7 @@ public class Solmu {
 
     public void solmu(int nimi){
     tunnus = nimi;
-    paikkaKeossa = Integer.MAX_VALUE; // onko paras mahdollinen valinta
+    paikkaKeossa = 1000; // onko paras mahdollinen valinta
     parent = null;
     }
 
@@ -33,6 +33,11 @@ public class Solmu {
     public Solmu getParent(){
     return this.parent;
     }
+
+    public int getParentTunnus(){
+    return this.parentTunnus;
+    }
+
     public int getNimi(){
     return tunnus;
     }
@@ -49,6 +54,9 @@ public class Solmu {
     this.tunnus = nimi;    
     }
 
+    public void setParentTunnus(int nimi){
+    this.parentTunnus = nimi;
+    }
   
 
 }

@@ -138,16 +138,6 @@ public class KekoTest {
     }
 
 
-//    @Test
-//    public void testUpdate() {
-//        System.out.println("insert");
-//        Solmu uusisolmu = null;
-//        Keko instance = new Keko();
-//        instance.insert(uusisolmu);
-//        // TODO review the generated test code and remove the default call to fail.
-//        fail("The test case is a prototype.");
-//    }
-
    @Test
     public void testKruskalInsert() {
         System.out.println("lisataan Kruskal kekoon solmu");
@@ -200,9 +190,42 @@ public class KekoTest {
         instance.tulostaKeko();
         }
 
-
-
     }
 
+
+        @Test
+        public void testKruskalPoistaMinimi(){
+        System.out.println("poistetaan kruskal keosta solmu");
+        Keko instance = new Keko();
+
+        for (int i=1; i<6; i++){
+        Solmu uusisolmu = new Solmu();
+        uusisolmu.setEtaisyys(i*2);
+        uusisolmu.setNimi(i);
+        instance.KruskalInsert(uusisolmu);
+        }
+        instance.tulostaKeko();
+        instance.heapify(1);
+        instance.tulostaKeko();
+
+        }
+
+
+        @Test
+        public void SwapTest(){
+        System.out.println("swap test");
+          Keko instance = new Keko();
+
+        for (int i=1; i<6; i++){
+        Solmu uusisolmu = new Solmu();
+        uusisolmu.setEtaisyys(i*2);
+        uusisolmu.setNimi(i);
+        instance.KruskalInsert(uusisolmu);
+        }
+        instance.tulostaKeko();
+        instance.swap(1, 2);
+        instance.tulostaKeko();
+
+        }
 
 }

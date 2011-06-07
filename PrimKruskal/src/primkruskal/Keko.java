@@ -15,7 +15,7 @@ public class Keko {
     public void Keko() {
         heapSize = 1000;
         keko = new Solmu[heapSize];
-        top = 1;
+        top = 0;
         solmulista = new Solmu[heapSize];
         Solmu parent = new Solmu();
         parent.setPaikkakeossa(0);
@@ -31,7 +31,7 @@ public class Keko {
     }
 
     //onko tarvetta  palauttaa olio vai pelkästään arvo?
-    public int PoistaMinimi() {
+    public Solmu PoistaMinimi() {
      
         Solmu minimi = keko[1];
         keko[1] = keko[top];
@@ -42,27 +42,41 @@ public class Keko {
         solmulista[poistettava] = null;
         heapify(1);
 
-        return minimi.getEtaisyys();
+        return minimi;
     }
 
-    private void heapify(int indeksi) {
+
+    public void heapify(int indeksi) {
 
         if ((indeksi * 2 + 1) < top) {
             //tarkistettava ettei tule nullpointteri, kun menee yli
 
+            //etsitään indeksit
             int vasemmankoko = (keko[(indeksi * 2)]).getEtaisyys();
             int oikeankoko = (keko[(indeksi * 2 + 1)]).getEtaisyys();
             int tarkistettavasolmu = (keko[indeksi]).getEtaisyys();
 
-            if (tarkistettavasolmu < Math.max(vasemmankoko, oikeankoko)) {
-                swap(tarkistettavasolmu, Math.max(vasemmankoko, oikeankoko));
-                heapify(Math.max(vasemmankoko, oikeankoko));
+
+            if (tarkistettavasolmu > (Math.min(vasemmankoko, oikeankoko))) {
+                
+                if (vasemmankoko<oikeankoko) {
+                    swap(indeksi, (indeksi*2));
+                    heapify((indeksi*2));
+                }          
+                
+                else {
+                swap(indeksi, (indeksi*2+1));
+                heapify(indeksi*2+1);
+                }
+               
             }
+
         } else if ((indeksi * 2) == top) {
             int vasemmankoko = (keko[(indeksi * 2)]).getEtaisyys();
             int tarkistettavasolmu = (keko[indeksi]).getEtaisyys();
-            if (tarkistettavasolmu < vasemmankoko) {
-                swap(tarkistettavasolmu, vasemmankoko);
+            if (tarkistettavasolmu > vasemmankoko) {
+                
+                swap(indeksi, (indeksi*2));
                 //tahan ei varmaan tarvitse enaa heapifya, koska oikeaa lastakaan ei ole.
             }
 
@@ -76,6 +90,7 @@ public class Keko {
         if (solmulista[1] == uusisolmu) {
             updateSolmu(uusisolmu);
         }
+
         else {
 
             if (solmujenmaara > 0) {
@@ -110,20 +125,23 @@ public class Keko {
     int parent = top/2;
     int child = top;
 
-    if(top>3){
+   if(parent>0 && child>0){
 
-        while((keko[parent]).getEtaisyys() > ((keko[child]).getEtaisyys()) && parent!=1  ){
+        while((keko[parent]).getEtaisyys() > ((keko[child]).getEtaisyys())  ){
         swap(parent, child);
         parent = (parent/2);
         child = (child/2);
+
+        if (parent<1 || child<1) break;
         }
-    }
+  
+   }
 
     }
 
 
 
-    private void swap(int solmu, int lapsi) {
+    public void swap(int solmu, int lapsi) {
         Solmu valiaikainenLapsi = keko[lapsi];
         Solmu valiaikainenSolmu = keko[solmu];
 
@@ -139,7 +157,7 @@ public class Keko {
 
     public void tulostaKeko() {
 
-        for (int i = 1; i < top; i++) {
+        for (int i = 1; i < top+1; i++) {
             System.out.print("[" +(keko[i]).getNimi() + "]" );
             System.out.print((keko[i]).getEtaisyys()+ ", "   );
 
@@ -157,7 +175,7 @@ public class Keko {
         if ((paivitettava.getEtaisyys()) > (uusiSolmu.getEtaisyys())) {
             paivitettava.setEtaisyys(uusiSolmu.getEtaisyys());
 
-            Solmu paivitettavaParent = paivitettava.getParent();
+            Solmu paivitettavaParent = paivitettava.getParent();// tarvitseeko parent tunnusta päivittää?
 
 
             while (paivitettavaParent.getEtaisyys() < paivitettava.getEtaisyys() && paivitettava.paikkaKeossa > 1) {
