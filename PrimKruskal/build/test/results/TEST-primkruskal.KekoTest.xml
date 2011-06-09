@@ -1,26 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <testsuite errors="1" failures="0" hostname="herkko-desktop" name="primkruskal.KekoTest" tests="8" time="0.084" timestamp="2011-06-06T18:43:52">
+=======
+<testsuite errors="2" failures="0" hostname="dac-17" name="primkruskal.KekoTest" tests="10" time="0.135" timestamp="2011-06-07T08:23:46">
+>>>>>>> 5271a5d288a63bc55f5c72f74ea4bc2727c6631c
   <properties>
     <property name="default.javac.source" value="1.6" />
     <property name="file.encoding.pkg" value="sun.io" />
     <property name="javac.source" value="1.5" />
+<<<<<<< HEAD
     <property name="netbeans.system_http_proxy" value="DIRECT" />
     <property name="java.home" value="/usr/lib/jvm/java-6-openjdk/jre" />
+=======
+    <property name="java.home" value="/usr/lib/jvm/java-6-sun-1.6.0.24/jre" />
+>>>>>>> 5271a5d288a63bc55f5c72f74ea4bc2727c6631c
     <property name="test.src.dir" value="test" />
     <property name="javadoc.version" value="false" />
     <property name="libs.CopyLibs.classpath" value="/usr/share/netbeans/6.8/java3/ant/extra/org-netbeans-modules-java-j2seproject-copylibstask.jar" />
     <property name="libs.javac-api.src" value="" />
+<<<<<<< HEAD
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-6-openjdk/jre/lib/endorsed" />
     <property name="libs.MySQLDriver.classpath" value="/home/herkko/.netbeans/6.8/modules/ext/mysql-connector-java-5.1.6-bin.jar" />
     <property name="libs.jaxb.javadoc" value="/home/herkko/.netbeans/6.8/docs/jaxb-api-doc.zip" />
     <property name="libs.junit.maven-pom" value="" />
     <property name="manifest.available+mkdist.available" value="true" />
     <property name="libs.PostgreSQLDriver.src" value="" />
+=======
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/endorsed" />
+    <property name="libs.junit.maven-pom" value="" />
+    <property name="manifest.available+mkdist.available" value="true" />
+>>>>>>> 5271a5d288a63bc55f5c72f74ea4bc2727c6631c
     <property name="src.dir" value="src" />
     <property name="sun.java2d.noddraw" value="true" />
     <property name="nbplatform.default.harness.dir" value="/usr/share/netbeans/6.8/harness" />
     <property name="debug-args-line" value="-Xdebug" />
+<<<<<<< HEAD
     <property name="netbeans.hash.code" value="unique=NBUBU020a7d2ee-7671-47b5-9a48-fd557f10c344_a38ff87f-6862-4545-beda-91a9148d50c6" />
+=======
+    <property name="netbeans.hash.code" value="unique=NBUBU04f0c8f8f-336b-4348-8ec5-e65d1c7cd1d3_cac8b812-50a9-40a6-9f29-bbf75f284c18" />
+>>>>>>> 5271a5d288a63bc55f5c72f74ea4bc2727c6631c
     <property name="build.sysclasspath" value="ignore" />
     <property name="have.sources" value="true" />
     <property name="includes" value="**" />
@@ -29,6 +47,7 @@
     <property name="libs.swing-app-framework.javadoc" value="" />
     <property name="sun.os.patch.level" value="unknown" />
     <property name="java.vendor.url" value="http://java.sun.com/" />
+<<<<<<< HEAD
     <property name="java.version" value="1.6.0_20" />
     <property name="nb.show.statistics.ui" value="usageStatisticsEnabled" />
     <property name="javac.debug" value="true" />
@@ -36,11 +55,20 @@
     <property name="org.openide.major.version" value="IDE/1" />
     <property name="run.classpath" value=":build/classes" />
     <property name="libs.PostgreSQLDriver.maven-pom" value="" />
+=======
+    <property name="java.version" value="1.6.0_24" />
+    <property name="nb.show.statistics.ui" value="usageStatisticsEnabled" />
+    <property name="javac.debug" value="true" />
+    <property name="ant.file.PrimKruskal" value="/fs-0/0/hjvirola/Documents/tiralabra/PrimVsKruskal/PrimKruskal/build.xml" />
+    <property name="org.openide.major.version" value="IDE/1" />
+    <property name="run.classpath" value=":build/classes" />
+>>>>>>> 5271a5d288a63bc55f5c72f74ea4bc2727c6631c
     <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
     <property name="netbeans.autoupdate.variant" value="" />
     <property name="libs.absolutelayout.javadoc" value="" />
     <property name="libs.junit_4.maven-pom" value="" />
     <property name="netbeans.buildnumber" value="100326-unknown-revn" />
+<<<<<<< HEAD
     <property name="jna.platform.library.path" value="/usr/lib32:/usr/lib:/lib" />
     <property name="manifest.file" value="manifest.mf" />
     <property name="libs.swing-app-framework.maven-pom" value="" />
@@ -53,6 +81,18 @@
     <property name="php.global.include.path" value="" />
     <property name="sun.java2d.pmoffscreen" value="false" />
     <property name="jdk.home" value="/usr/lib/jvm/java-6-openjdk" />
+=======
+    <property name="manifest.file" value="manifest.mf" />
+    <property name="libs.swing-app-framework.maven-pom" value="" />
+    <property name="user.name" value="hjvirola" />
+    <property name="manifest.available+main.class+mkdist.available" value="true" />
+    <property name="empty.dir" value="/fs-0/0/hjvirola/Documents/tiralabra/PrimVsKruskal/PrimKruskal/build/empty" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java2d.pmoffscreen" value="false" />
+    <property name="jdk.home" value="/usr/lib/jvm/java-6-sun" />
+>>>>>>> 5271a5d288a63bc55f5c72f74ea4bc2727c6631c
     <property name="netbeans.autoupdate.version" value="1.23" />
     <property name="org.openide.TopManager" value="org.netbeans.core.NonGui" />
     <property name="netbeans.dirs" value="/usr/share/netbeans/6.8/nb6.8:/usr/share/netbeans/6.8/bin/../ergonomics2:/usr/share/netbeans/6.8/ide12:/usr/share/netbeans/6.8/java3:/usr/share/netbeans/6.8/bin/../xml2:/usr/share/netbeans/6.8/apisupport1:/usr/share/netbeans/6.8/bin/../webcommon1:/usr/share/netbeans/6.8/bin/../websvccommon1:/usr/share/netbeans/6.8/bin/../enterprise6:/usr/share/netbeans/6.8/bin/../mobility8:/usr/share/netbeans/6.8/bin/../profiler3:/usr/share/netbeans/6.8/bin/../ruby2:/usr/share/netbeans/6.8/bin/../python1:/usr/share/netbeans/6.8/bin/../php1:/usr/share/netbeans/6.8/bin/../visualweb2:/usr/share/netbeans/6.8/bin/../soa2:/usr/share/netbeans/6.8/bin/../identity2:/usr/share/netbeans/6.8/bin/../uml6:/usr/share/netbeans/6.8/harness:/usr/share/netbeans/6.8/bin/../cnd3:/usr/share/netbeans/6.8/bin/../dlight2:/usr/share/netbeans/6.8/bin/../groovy2:/usr/share/netbeans/6.8/bin/../extra:/usr/share/netbeans/6.8/bin/../javafx2:/usr/share/netbeans/6.8/bin/../javacard1:" />
@@ -60,7 +100,10 @@
     <property name="java.specification.name" value="Java Platform API Specification" />
     <property name="javadoc.author" value="false" />
     <property name="user.timezone" value="" />
+<<<<<<< HEAD
     <property name="netbeans.system_http_non_proxy_hosts" value="" />
+=======
+>>>>>>> 5271a5d288a63bc55f5c72f74ea4bc2727c6631c
     <property name="manifest.available" value="true" />
     <property name="libs.swing-layout.maven-pom" value="" />
     <property name="libs.junit.javadoc" value="" />
@@ -68,6 +111,7 @@
     <property name="path.separator" value=":" />
     <property name="version-output" value="java version &quot;1.6" />
     <property name="libs.absolutelayout.classpath" value="/usr/share/netbeans/6.8/java3/modules/ext/AbsoluteLayout.jar" />
+<<<<<<< HEAD
     <property name="libs.jaxb.maven-pom" value="" />
     <property name="file.encoding" value="UTF-8" />
     <property name="dist.javadoc.dir" value="dist/javadoc" />
@@ -75,6 +119,14 @@
     <property name="built-jar.properties" value="/home/herkko/Asiakirjat/käpistely/TiraLabra/PrimKruskal/build/built-jar.properties" />
     <property name="libs.junit.src" value="" />
     <property name="ant.file" value="/home/herkko/Asiakirjat/käpistely/TiraLabra/PrimKruskal/build.xml" />
+=======
+    <property name="file.encoding" value="UTF-8" />
+    <property name="dist.javadoc.dir" value="dist/javadoc" />
+    <property name="https.nonProxyHosts" value="localhost|127.0.0.1|dac-17" />
+    <property name="built-jar.properties" value="/fs-0/0/hjvirola/Documents/tiralabra/PrimVsKruskal/PrimKruskal/build/built-jar.properties" />
+    <property name="libs.junit.src" value="" />
+    <property name="ant.file" value="/fs-0/0/hjvirola/Documents/tiralabra/PrimVsKruskal/PrimKruskal/build.xml" />
+>>>>>>> 5271a5d288a63bc55f5c72f74ea4bc2727c6631c
     <property name="libs.junit_4.src" value="" />
     <property name="netbeans.autoupdate.language" value="fi" />
     <property name="java.io.tmpdir" value="/tmp" />
@@ -94,6 +146,7 @@
     <property name="sun.desktop" value="gnome" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
     <property name="build.test.classes.dir" value="build/test/classes" />
+<<<<<<< HEAD
     <property name="libs.jaxb.src" value="" />
     <property name="libs.MySQLDriver.javadoc" value="" />
     <property name="netbeans.dynamic.classpath" value="/usr/share/netbeans/6.8/platform11/core/core.jar:/usr/share/netbeans/6.8/platform11/core/org-openide-filesystems.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_ko.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_tr.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_zh_TW.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_sv.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_ja.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_ru.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_zh_TW.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_nl.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_in_ID.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_sv.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_tr.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_ro.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_cs.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_gl_ES.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_ar.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_gl_ES.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_sq.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_ko.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_it.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_zh_CN.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_de.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_it.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_zh_CN.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_cs.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_pt_BR.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_in_ID.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_de.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_ca.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_pt_BR.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_ru.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_ro.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_ca.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_nl.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_sq.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_fr.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_ar.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_es.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_fr.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_ja.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_es.jar:/usr/share/netbeans/6.8/nb6.8/core/org-netbeans-upgrader.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_sv.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_zh_CN.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_it.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_nl.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_sv.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_ko.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_ja.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_pt_BR.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_ru.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_ca.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_de.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_pt_BR.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_es.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_de.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_fr.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_ja.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_ru.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_nl.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_es.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_ko.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_it.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_zh_TW.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_gl_ES.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_tr.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_zh_TW.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_fr.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_gl_ES.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_zh_CN.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_tr.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_ca.jar" />
@@ -101,6 +154,13 @@
     <property name="libs.beans-binding.javadoc" value="" />
     <property name="platform.active" value="default_platform" />
     <property name="http.nonProxyHosts" value="localhost|127.0.0.1|herkko-desktop" />
+=======
+    <property name="netbeans.dynamic.classpath" value="/usr/share/netbeans/6.8/platform11/core/core.jar:/usr/share/netbeans/6.8/platform11/core/org-openide-filesystems.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_fr.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_sq.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_sv.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_cs.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_in_ID.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_ko.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_ar.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_pt_BR.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_fr.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_ko.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_it.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_ru.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_gl_ES.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_nl.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_ro.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_sq.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_cs.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_ar.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_in_ID.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_tr.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_zh_CN.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_ca.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_nl.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_zh_TW.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_it.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_zh_TW.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_zh_CN.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_ja.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_sv.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_de.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_ro.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_ja.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_pt_BR.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_ru.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_gl_ES.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_tr.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_es.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_ca.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_es.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_de.jar:/usr/share/netbeans/6.8/nb6.8/core/org-netbeans-upgrader.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_ja.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_pt_BR.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_gl_ES.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_ko.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_ca.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_it.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_gl_ES.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_es.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_fr.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_zh_TW.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_it.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_tr.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_sv.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_ru.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_es.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_de.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_pt_BR.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_ca.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_zh_TW.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_de.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_zh_CN.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_ja.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_zh_CN.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_tr.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_fr.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_nl.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_nl.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_ru.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_sv.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_ko.jar" />
+    <property name="manifest.available+main.class" value="true" />
+    <property name="libs.beans-binding.javadoc" value="" />
+    <property name="platform.active" value="default_platform" />
+    <property name="http.nonProxyHosts" value="localhost|127.0.0.1|dac-17" />
+>>>>>>> 5271a5d288a63bc55f5c72f74ea4bc2727c6631c
     <property name="libs.junit_4.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="FI" />
     <property name="libs.beans-binding.maven-pom" value="" />
@@ -112,7 +172,11 @@
     <property name="ant.version" value="Apache Ant version 1.7.1 compiled on September 8 2010" />
     <property name="netbeans.home" value="/usr/share/netbeans/6.8/platform11" />
     <property name="javadoc.nonavbar" value="false" />
+<<<<<<< HEAD
     <property name="user.properties.file" value="/home/herkko/.netbeans/6.8/build.properties" />
+=======
+    <property name="user.properties.file" value="/fs-0/0/hjvirola/.netbeans/6.8/build.properties" />
+>>>>>>> 5271a5d288a63bc55f5c72f74ea4bc2727c6631c
     <property name="libs.JWSAntTasks.classpath" value="/usr/share/netbeans/6.8/java3/ant/extra/org-netbeans-modules-javawebstart-anttasks.jar" />
     <property name="netbeans.importclass" value="org.netbeans.upgrade.AutoUpgrade" />
     <property name="libs.CopyLibs.maven-pom" value="" />
@@ -122,16 +186,26 @@
     <property name="os.name" value="Linux" />
     <property name="java.specification.vendor" value="Sun Microsystems Inc." />
     <property name="run.test.classpath" value=":build/classes:/usr/share/netbeans/6.8/platform11/modules/ext/junit-4.6.jar:/usr/share/netbeans/6.8/platform11/modules/ext/hamcrest-core.jar:build/test/classes" />
+<<<<<<< HEAD
     <property name="java.vm.name" value="OpenJDK Server VM" />
+=======
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+>>>>>>> 5271a5d288a63bc55f5c72f74ea4bc2727c6631c
     <property name="libs.CopyLibs.src" value="" />
     <property name="manifest.available-mkdist.available" value="true" />
     <property name="org.openide.version" value="deprecated" />
     <property name="libs.junit.classpath" value="/usr/share/netbeans/6.8/java3/modules/ext/junit-3.8.2.jar" />
     <property name="libs.beans-binding.src" value="" />
+<<<<<<< HEAD
     <property name="java.library.path" value="/usr/lib/jvm/java-6-openjdk/jre/lib/i386/server:/usr/lib/jvm/java-6-openjdk/jre/lib/i386:/usr/lib/jvm/java-6-openjdk/jre/../lib/i386:/usr/lib/jvm/java-6-openjdk/jre/lib/i386/client:/usr/lib/jvm/java-6-openjdk/jre/lib/i386:/usr/lib/jvm/java-6-openjdk/jre/../lib/i386:/usr/java/packages/lib/i386:/usr/lib/jni:/lib:/usr/lib" />
     <property name="libs.PostgreSQLDriver.javadoc" value="" />
     <property name="ant.java.version" value="1.6" />
     <property name="basedir" value="/home/herkko/Asiakirjat/käpistely/TiraLabra/PrimKruskal" />
+=======
+    <property name="java.library.path" value="/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="basedir" value="/fs-0/0/hjvirola/Documents/tiralabra/PrimVsKruskal/PrimKruskal" />
+>>>>>>> 5271a5d288a63bc55f5c72f74ea4bc2727c6631c
     <property name="javadoc.noindex" value="false" />
     <property name="java.class.version" value="50.0" />
     <property name="sun.awt.exception.handler" value="org.netbeans.core.startup.TopLogging$AWTHandler" />
@@ -140,6 +214,7 @@
     <property name="javadoc.splitindex" value="true" />
     <property name="libs.javac-api.javadoc" value="" />
     <property name="javadoc.preview" value="true" />
+<<<<<<< HEAD
     <property name="libs.MySQLDriver.maven-pom" value="" />
     <property name="libs.CopyLibs.javadoc" value="" />
     <property name="libs.PostgreSQLDriver.classpath" value="/home/herkko/.netbeans/6.8/modules/ext/postgresql-8.3-603.jdbc3.jar" />
@@ -153,10 +228,24 @@
     <property name="javadoc.windowtitle" value="" />
     <property name="run.jvmargs" value="" />
     <property name="build.generated.sources.dir" value="build/generated-sources" />
+=======
+    <property name="libs.CopyLibs.javadoc" value="" />
+    <property name="libs.junit_4.classpath" value="/usr/share/netbeans/6.8/platform11/modules/ext/junit-4.6.jar:/usr/share/netbeans/6.8/platform11/modules/ext/hamcrest-core.jar" />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64" />
+    <property name="build.dir" value="build" />
+    <property name="libs.swing-app-framework.classpath" value="/usr/share/netbeans/6.8/java3/modules/ext/appframework-1.0.3.jar:/usr/share/netbeans/6.8/java3/modules/ext/swing-worker-1.1.jar" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Server Compiler" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="javadoc.encoding.used" value="UTF-8" />
+    <property name="javadoc.windowtitle" value="" />
+    <property name="build.generated.sources.dir" value="build/generated-sources" />
+    <property name="run.jvmargs" value="" />
+>>>>>>> 5271a5d288a63bc55f5c72f74ea4bc2727c6631c
     <property name="build.compiler.emacs" value="true" />
     <property name="ant.project.name" value="PrimKruskal" />
     <property name="libs.swing-layout.classpath" value="/usr/share/netbeans/6.8/platform11/modules/ext/swing-layout-1.0.4.jar" />
     <property name="java.vm.specification.version" value="1.0" />
+<<<<<<< HEAD
     <property name="work.dir" value="/home/herkko/Asiakirjat/käpistely/TiraLabra/PrimKruskal" />
     <property name="libs.jaxb.classpath" value="/home/herkko/.netbeans/6.8/modules/ext/jaxb/activation.jar:/home/herkko/.netbeans/6.8/modules/ext/jaxb/api/jaxb-api.jar:/home/herkko/.netbeans/6.8/modules/ext/jaxb/jaxb-impl.jar:/home/herkko/.netbeans/6.8/modules/ext/jaxb/jaxb1-impl.jar:/home/herkko/.netbeans/6.8/modules/ext/jaxb/jaxb-xjc.jar:/home/herkko/.netbeans/6.8/modules/ext/jaxb/api/jsr173_api.jar" />
     <property name="manifest.available+main.class-mkdist.available" value="true" />
@@ -181,21 +270,56 @@
     <property name="java.vm.version" value="19.0-b09" />
     <property name="java.class.path" value="/home/herkko/Asiakirjat/käpistely/TiraLabra/PrimKruskal/build/classes:/usr/share/netbeans/6.8/platform11/modules/ext/junit-4.6.jar:/usr/share/netbeans/6.8/platform11/modules/ext/hamcrest-core.jar:/home/herkko/Asiakirjat/käpistely/TiraLabra/PrimKruskal/build/test/classes:/usr/share/netbeans/6.8/java3/ant/lib/junit.jar:/usr/share/netbeans/6.8/java3/ant/lib/ant-launcher.jar:/usr/share/netbeans/6.8/java3/ant/lib/ant.jar:/usr/share/netbeans/6.8/java3/ant/lib/ant-junit.jar" />
     <property name="os.arch" value="i386" />
+=======
+    <property name="work.dir" value="/fs-0/0/hjvirola/Documents/tiralabra/PrimVsKruskal/PrimKruskal" />
+    <property name="javadoc.use" value="true" />
+    <property name="manifest.available+main.class-mkdist.available" value="true" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="os.version" value="2.6.32-32-generic" />
+    <property name="excludes" value="" />
+    <property name="user.home" value="/fs-0/0/hjvirola" />
+    <property name="org.xml.sax.driver" value="com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="libs.absolutelayout.maven-pom" value="" />
+    <property name="user.dir" value="/fs-0/0/hjvirola/Documents/tiralabra/PrimVsKruskal/PrimKruskal" />
+    <property name="org.openide.TopManager.GUI" value="true" />
+    <property name="debug-transport" value="dt_socket" />
+    <property name="ant.file.PrimKruskal-impl" value="/fs-0/0/hjvirola/Documents/tiralabra/PrimVsKruskal/PrimKruskal/nbproject/build-impl.xml" />
+    <property name="application.args" value="" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="compile.on.save" value="true" />
+    <property name="endorsed.classpath.cmd.line.arg" value="-Xbootclasspath/p:&apos;/fs-0/0/hjvirola/Documents/tiralabra/PrimVsKruskal/PrimKruskal/${endorsed.classpath}&apos;" />
+    <property name="java.vm.version" value="19.1-b02" />
+    <property name="java.class.path" value="/fs-0/0/hjvirola/Documents/tiralabra/PrimVsKruskal/PrimKruskal/build/classes:/usr/share/netbeans/6.8/platform11/modules/ext/junit-4.6.jar:/usr/share/netbeans/6.8/platform11/modules/ext/hamcrest-core.jar:/fs-0/0/hjvirola/Documents/tiralabra/PrimVsKruskal/PrimKruskal/build/test/classes:/usr/share/netbeans/6.8/java3/ant/lib/junit.jar:/usr/share/netbeans/6.8/java3/ant/lib/ant-launcher.jar:/usr/share/netbeans/6.8/java3/ant/lib/ant.jar:/usr/share/netbeans/6.8/java3/ant/lib/ant-junit.jar" />
+    <property name="os.arch" value="amd64" />
+>>>>>>> 5271a5d288a63bc55f5c72f74ea4bc2727c6631c
     <property name="javac.deprecation" value="false" />
     <property name="nbplatform.default.netbeans.dest.dir" value="/usr/share/netbeans/6.8" />
     <property name="build.classes.excludes" value="**/*.java,**/*.form" />
     <property name="dist.dir" value="dist" />
+<<<<<<< HEAD
     <property name="netbeans.user" value="/home/herkko/.netbeans/6.8" />
     <property name="debug.classpath" value=":build/classes" />
+=======
+    <property name="debug.classpath" value=":build/classes" />
+    <property name="netbeans.user" value="/fs-0/0/hjvirola/.netbeans/6.8" />
+>>>>>>> 5271a5d288a63bc55f5c72f74ea4bc2727c6631c
     <property name="sun.java.launcher" value="SUN_STANDARD" />
     <property name="ant.core.lib" value="/usr/share/netbeans/6.8/java3/ant/lib/ant.jar" />
     <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
     <property name="do.depend" value="false" />
     <property name="file.separator" value="/" />
+<<<<<<< HEAD
     <property name="java.runtime.version" value="1.6.0_20-b20" />
     <property name="sun.boot.class.path" value="/home/herkko/Asiakirjat/käpistely/TiraLabra/PrimKruskal/${endorsed.classpath}:/usr/lib/jvm/java-6-openjdk/jre/lib/resources.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/jsse.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/jce.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/charsets.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/netx.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/plugin.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/rhino.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-openjdk/jre/classes" />
     <property name="debug.test.classpath" value=":build/classes:/usr/share/netbeans/6.8/platform11/modules/ext/junit-4.6.jar:/usr/share/netbeans/6.8/platform11/modules/ext/hamcrest-core.jar:build/test/classes" />
     <property name="javax.accessibility.assistive_technologies" value="org.GNOME.Accessibility.JavaBridge" />
+=======
+    <property name="java.runtime.version" value="1.6.0_24-b07" />
+    <property name="sun.boot.class.path" value="/fs-0/0/hjvirola/Documents/tiralabra/PrimVsKruskal/PrimKruskal/${endorsed.classpath}:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/resources.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/rt.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/jsse.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/jce.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/charsets.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/classes" />
+    <property name="debug.test.classpath" value=":build/classes:/usr/share/netbeans/6.8/platform11/modules/ext/junit-4.6.jar:/usr/share/netbeans/6.8/platform11/modules/ext/hamcrest-core.jar:build/test/classes" />
+>>>>>>> 5271a5d288a63bc55f5c72f74ea4bc2727c6631c
     <property name="libs.beans-binding.classpath" value="/usr/share/netbeans/6.8/java3/modules/ext/beansbinding-1.2.1.jar" />
     <property name="main.class" value="primkruskal.Main" />
     <property name="have.tests" value="true" />
@@ -204,9 +328,15 @@
     <property name="libs.javac-api.classpath" value="/usr/share/netbeans/6.8/java3/modules/ext/javac-api-nb-7.0-b07.jar" />
     <property name="user.country" value="FI" />
     <property name="javadoc.notree" value="false" />
+<<<<<<< HEAD
     <property name="default.javac.target" value="1.6" />
     <property name="javac.classpath" value="" />
     <property name="javadoc.additionalparam" value="" />
+=======
+    <property name="javac.classpath" value="" />
+    <property name="javadoc.additionalparam" value="" />
+    <property name="default.javac.target" value="1.6" />
+>>>>>>> 5271a5d288a63bc55f5c72f74ea4bc2727c6631c
     <property name="build.classes.dir" value="build/classes" />
     <property name="libs.swing-layout.javadoc" value="" />
     <property name="libs.swing-layout.src" value="" />
@@ -216,6 +346,7 @@
     <property name="libs.swing-app-framework.src" value="" />
     <property name="java.specification.version" value="1.6" />
     <property name="libs.JWSAntTasks.javadoc" value="" />
+<<<<<<< HEAD
     <property name="sun.arch.data.model" value="32" />
   </properties>
   <testcase classname="primkruskal.KekoTest" name="testLuoKeko" time="0.003" />
@@ -237,10 +368,42 @@ lisataan useampi solmu
 [2]0, [3]2, [4]6, [5]6, [6]4, [7]8, [8]14, [9]4, 
 lisataan samoja solmuja
 [2]0, 
+=======
+    <property name="sun.arch.data.model" value="64" />
+  </properties>
+  <testcase classname="primkruskal.KekoTest" name="testLuoKeko" time="0.0050" />
+  <testcase classname="primkruskal.KekoTest" name="testInsertYksi" time="0.0010" />
+  <testcase classname="primkruskal.KekoTest" name="testInsertUseampi" time="0.0010" />
+  <testcase classname="primkruskal.KekoTest" name="testInsertSama" time="0.0" />
+  <testcase classname="primkruskal.KekoTest" name="testUpdate" time="0.0060">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at primkruskal.Keko.updateSolmu(Keko.java:155)
+	at primkruskal.KekoTest.testUpdate(KekoTest.java:134)
+</error>
+  </testcase>
+  <testcase classname="primkruskal.KekoTest" name="testKruskalInsert" time="0.0010" />
+  <testcase classname="primkruskal.KekoTest" name="testKruskalInsertMonta" time="0.0030" />
+  <testcase classname="primkruskal.KekoTest" name="testKruskalpoista" time="0.0070" />
+  <testcase classname="primkruskal.KekoTest" name="testKruskalPoistaMinimi" time="0.0090">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at primkruskal.Keko.swap(Keko.java:132)
+	at primkruskal.Keko.heapify(Keko.java:60)
+	at primkruskal.KekoTest.testKruskalPoistaMinimi(KekoTest.java:208)
+</error>
+  </testcase>
+  <testcase classname="primkruskal.KekoTest" name="SwapTest" time="0.0020" />
+  <system-out><![CDATA[lisataan yksi solmu
+
+lisataan useampi solmu
+[2]2, [3]0, [4]0, [5]8, [6]0, [7]10, [8]8, [9]14, 
+lisataan samoja solmuja
+[2]10, 
+>>>>>>> 5271a5d288a63bc55f5c72f74ea4bc2727c6631c
 paivitetaan solmuja
 lisataan Kruskal kekoon solmu
 
 lisataan Kruskal kekoon solmuja
+<<<<<<< HEAD
 [2]0, [3]0, [4]0, [5]0, [12]20, [13]0, [8]20, [9]60, [10]30, [11]60, [6]30, [7]40, [14]30, [15]40, 
 Poistetaan Kruskal keosta solmuja
 [2]0, [3]0, [4]10, [9]0, [11]20, [7]20, [8]30, [5]20, [10]10, [6]30, [12]50, [13]30, [14]100, [15]80, 
@@ -264,6 +427,36 @@ Poistettiin: 20
 [8]30, [3]0, [4]10, [9]0, [11]20, 
 Poistettiin: 30
 [7]20, [3]0, [4]10, [9]0, 
+=======
+[2]0, [3]0, [4]10, [5]0, [6]10, [7]40, [8]10, [9]50, [10]0, [11]60, [12]30, [13]70, [14]100, [15]110, 
+Poistetaan Kruskal keosta solmuja
+[2]0, [3]0, [8]0, [5]10, [6]0, [7]20, [4]10, [9]10, [10]40, [11]0, [12]70, [13]80, [14]50, [15]50, 
+Poistettiin: 0
+[16]80, [3]0, [8]0, [5]10, [6]0, [7]20, [4]10, [9]10, [10]40, [11]0, [12]70, [13]80, [14]50, 
+Poistettiin: 80
+[15]50, [3]0, [8]0, [5]10, [6]0, [7]20, [4]10, [9]10, [10]40, [11]0, [12]70, [13]80, 
+Poistettiin: 50
+[14]50, [3]0, [8]0, [5]10, [6]0, [7]20, [4]10, [9]10, [10]40, [11]0, [12]70, 
+Poistettiin: 50
+[13]80, [3]0, [8]0, [5]10, [6]0, [7]20, [4]10, [9]10, [10]40, [11]0, 
+Poistettiin: 80
+[12]70, [3]0, [8]0, [5]10, [6]0, [7]20, [4]10, [9]10, [10]40, 
+Poistettiin: 70
+[11]0, [3]0, [8]0, [5]10, [6]0, [7]20, [4]10, [9]10, 
+Poistettiin: 0
+[10]40, [3]0, [8]0, [5]10, [6]0, [7]20, [4]10, 
+Poistettiin: 40
+[9]10, [3]0, [8]0, [5]10, [6]0, [7]20, 
+Poistettiin: 10
+[4]10, [3]0, [8]0, [5]10, [6]0, 
+Poistettiin: 10
+[7]20, [3]0, [8]0, [5]10, 
+poistetaan kruskal keosta solmu
+[1]2, [2]4, [3]6, [4]8, 
+swap test
+[1]2, [2]4, [3]6, [4]8, 
+[2]4, [1]2, [3]6, [4]8, 
+>>>>>>> 5271a5d288a63bc55f5c72f74ea4bc2727c6631c
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
