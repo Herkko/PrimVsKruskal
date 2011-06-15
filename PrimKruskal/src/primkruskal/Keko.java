@@ -23,19 +23,20 @@ public class Keko {
         keko[0] = parent;
     }
 
-    public void Keko(int maara) {
-        heapSize = maara;
-        keko = new Solmu[heapSize];
-        top = 0;
-        solmulista = new Solmu[heapSize];
-    }
+//    public void Keko(int maara) {
+//        heapSize = maara;
+//        keko = new Solmu[heapSize];
+//        top = 0;
+//        solmulista = new Solmu[heapSize];
+//    }
 
-    //onko tarvetta  palauttaa olio vai pelkästään arvo?
+
     public Solmu PoistaMinimi() {
-     
+     if(top==0)return null;
         Solmu minimi = keko[1];
-        keko[1] = keko[top];
         top--;
+        keko[1] = keko[top];
+        
 
         //Toimiiko oikeasti?
         int poistettava = minimi.tunnus;
@@ -71,7 +72,7 @@ public class Keko {
                
             }
 
-        } else if ((indeksi * 2) == top) {
+        } else if ((indeksi * 2) < top) {
             int vasemmankoko = (keko[(indeksi * 2)]).getEtaisyys();
             int tarkistettavasolmu = (keko[indeksi]).getEtaisyys();
             if (tarkistettavasolmu > vasemmankoko) {
@@ -87,15 +88,16 @@ public class Keko {
     public void PrimInsert(Solmu uusisolmu) {
         int solmuTunnus = uusisolmu.getNimi();
 
-        if (solmulista[1] == uusisolmu) {
-            updateSolmu(uusisolmu);
-        }
 
-        else {
+        //eipä taida toimia vielä ihan oikeinn.
+//        if (solmulista[solmuTunnus] != null && solmulista[uusisolmu.getParentTunnus()]!=null ) {
+//            updateSolmu(uusisolmu);
+//        }
+//
+//        else {
 
-            if (solmujenmaara > 0) {
-                solmujenmaara++;
-                this.top++;
+            if (solmujenmaara > 1) {
+                
 
                 solmulista[solmuTunnus] = uusisolmu;
                 keko[top] = uusisolmu;
@@ -105,19 +107,27 @@ public class Keko {
 
                 Solmu vertailtavalapsi = keko[top];
                 Solmu vertailtavaParent = keko[solmuParent];
-
-                while ((vertailtavalapsi.getEtaisyys()) > (vertailtavaParent.getEtaisyys()) && (vertailtavaParent.getPaikka()) > 1) {
+                uusisolmu.setPaikkakeossa(top);
+                
+                while ((vertailtavalapsi.getEtaisyys()) < (vertailtavaParent.getEtaisyys()) && (vertailtavaParent.getPaikka()) > 1) {
                     swap(vertailtavalapsi.paikkaKeossa, vertailtavaParent.paikkaKeossa);
                     int uusiVanhempi = ((vertailtavalapsi.paikkaKeossa) / 2);
                     vertailtavaParent = keko[uusiVanhempi];
                 }
+                solmujenmaara++;
+                this.top++;
+
             } else {
                 keko[top] = uusisolmu;
+                solmulista[solmuTunnus]=uusisolmu;
+                uusisolmu.setPaikkakeossa(top);
                 top++;
+                solmujenmaara++;
+
             }
         }
-    }
-
+    
+    //}
 
     public void KruskalInsert(Solmu uusisolmu){
     this.top++;
@@ -156,8 +166,9 @@ public class Keko {
     }
 
     public void tulostaKeko() {
-
-        for (int i = 1; i < top+1; i++) {
+        //vähän eri versio pitäisi olla Kruskalille ja Primille :D
+        //Kruskal 1 ja Prim 0.
+        for (int i = 1; i < top; i++) {
             System.out.print("[" +(keko[i]).getNimi() + "]" );
             System.out.print((keko[i]).getEtaisyys()+ ", "   );
 
@@ -165,26 +176,53 @@ public class Keko {
         System.out.println();
     }
 
-    public void updateSolmu(Solmu uusiSolmu) {
-        int solmutunnus = uusiSolmu.getNimi();
+    public void updateSolmu(Solmu solmu) {
+        int solmutunnus = solmu.getNimi();
         Solmu paivitettava = solmulista[solmutunnus];
-        int paivitettavaEtaisyys = paivitettava.getEtaisyys(); // tällä hetkellä ei saa oikeaa viitettä taulukosta
+        int paivitettavaEtaisyys = solmu.getEtaisyys(); // tällä hetkellä ei saa oikeaa viitettä taulukosta
         int uusietaisyys = paivitettava.getEtaisyys();
 
 
-        if ((paivitettava.getEtaisyys()) > (uusiSolmu.getEtaisyys())) {
-            paivitettava.setEtaisyys(uusiSolmu.getEtaisyys());
-
-            Solmu paivitettavaParent = paivitettava.getParent();// tarvitseeko parent tunnusta päivittää?
+        if ((paivitettava.getEtaisyys()) > (solmu.getEtaisyys())) {
+            paivitettava.setEtaisyys(solmu.getEtaisyys());
 
 
-            while (paivitettavaParent.getEtaisyys() < paivitettava.getEtaisyys() && paivitettava.paikkaKeossa > 1) {
-                swap(paivitettava.paikkaKeossa, paivitettavaParent.paikkaKeossa);
-            }
+
+                Solmu vertailtavaParent = solmulista[paivitettava.parentTunnus];
+
+                if (solmujenmaara>1){
+                while ((paivitettava.getEtaisyys()) < (vertailtavaParent.getEtaisyys()) && (vertailtavaParent.getPaikka()) > 1) {
+                    swap(paivitettava.paikkaKeossa, vertailtavaParent.paikkaKeossa);
+                    int uusiVanhempi = ((paivitettava.paikkaKeossa) / 2);
+                    vertailtavaParent = keko[uusiVanhempi];
+                   }
+                }
+           
 
         }
 
 
 
+    }
+
+    void updateSolmuNumero(int solmu, int vanhempi, int paino) {
+
+    Solmu paivitettava = solmulista[solmu];
+    if (paivitettava==null)return;
+    int paivitettavapaino = paivitettava.getEtaisyys();
+    
+    if(paivitettavapaino>paino){
+    paivitettava.setEtaisyys(paino);
+    paivitettava.setParentTunnus(vanhempi);
+    }
+
+    int paivitettavaPaikka = paivitettava.getPaikka();
+    Solmu solmuVanhempi = solmulista[paivitettavaPaikka/2];
+    if (solmuVanhempi!=null){
+    while(paivitettava.getEtaisyys() < solmuVanhempi.getEtaisyys() && solmuVanhempi.getPaikka()>1){
+        swap(paivitettava.paikkaKeossa, solmuVanhempi.paikkaKeossa);
+        solmuVanhempi = keko[(paivitettava.paikkaKeossa/2)];
+    }
+    }
     }
 }

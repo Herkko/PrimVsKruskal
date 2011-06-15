@@ -46,41 +46,20 @@ public class KekoTest {
     Keko uusiKeko = new Keko();    
     }
 
-    /**
-     * Test of PoistaMinimi method, of class Keko.
-     */
-//    @Test
-//    public void testPoistaMinimi() {
-//        System.out.println("PoistaMinimi");
-//        Keko instance = new Keko();
-//        Solmu testisolmu = new Solmu();
-//        testisolmu.setEtaisyys(2);
-//
-//        int expResult = 2;
-//        int result = instance.PoistaMinimi();
-//        assertEquals(expResult, result);
-//
-//    }
-
-
-
-
-
+ 
    @Test
-    public void testInsertYksi() {
+    public void testPrimInsertYksi() {
         System.out.println("lisataan yksi solmu");
         Solmu uusisolmu = new Solmu();
         uusisolmu.etaisyysverkkoon=4;
         uusisolmu.setNimi(2);
-
-
         Keko instance = new Keko();
         instance.PrimInsert(uusisolmu);
-        instance.tulostaKeko();
+      
     }
 
    @Test
-    public void testInsertUseampi() {
+    public void testPrimInsertUseampi() {
         System.out.println("lisataan useampi solmu");
 
         Keko instance = new Keko();
@@ -118,8 +97,8 @@ public class KekoTest {
 
 
    @Test
-    public void testUpdate() {
-        System.out.println("paivitetaan solmuja");
+    public void testPrimUpdate() {
+        System.out.println("paivitetaan Prim solmuja");
 
         Keko instance = new Keko();
 
@@ -137,6 +116,38 @@ public class KekoTest {
 
     }
 
+   @Test
+   public void testPrimUpdateErit(){
+   System.out.println("solmutunnus on sama, mutta parentti on eri, joten ei pitäisi päivittyä.");
+
+   }
+
+
+   @Test
+   public void testPrimUpdatesolmunimella(){
+          System.out.println("lisataan yksi solmu ja paivitetaan");
+         Solmu ekasolmu = new Solmu();
+         ekasolmu.setNimi(3);
+         ekasolmu.setEtaisyys(4);
+
+
+        Solmu uusisolmu = new Solmu();
+        uusisolmu.setEtaisyys(7);
+        uusisolmu.setNimi(2);
+        uusisolmu.setParentTunnus(1);
+
+        Keko instance = new Keko();
+        instance.PrimInsert(uusisolmu);
+        instance.PrimInsert(ekasolmu);
+
+
+        instance.tulostaKeko();
+        instance.updateSolmuNumero(2, 2, 3);
+        instance.tulostaKeko();
+        instance.PoistaMinimi();
+        instance.tulostaKeko();
+
+   }
 
    @Test
     public void testKruskalInsert() {
@@ -165,7 +176,7 @@ public class KekoTest {
         instance.KruskalInsert(uusisolmu);
 
         }
-        instance.tulostaKeko();
+       // instance.tulostaKeko();
     }
 
 
@@ -186,7 +197,7 @@ public class KekoTest {
         instance.tulostaKeko();
 
         for(int i=0; i<10;i++){
-            System.out.println("Poistettiin: "+ instance.PoistaMinimi());
+            System.out.println("Poistettiin: "+ (instance.PoistaMinimi()).getNimi() );
         instance.tulostaKeko();
         }
 

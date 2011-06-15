@@ -55,7 +55,7 @@ public class Solmu {
     }
 
     public void setParentTunnus(int nimi){
-    this.parentTunnus = nimi;
+    parentTunnus = nimi;
     }
   
 

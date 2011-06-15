@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="herkko-desktop" name="primkruskal.KekoTest" tests="12" time="0.075" timestamp="2011-06-15T17:05:47">
+<testsuite errors="0" failures="0" hostname="herkko-desktop" name="primkruskal.VieruslistaTest" tests="4" time="0.075" timestamp="2011-06-15T17:05:48">
   <properties>
     <property name="default.javac.source" value="1.6" />
     <property name="file.encoding.pkg" value="sun.io" />
@@ -220,61 +220,16 @@
     <property name="libs.JWSAntTasks.javadoc" value="" />
     <property name="sun.arch.data.model" value="32" />
   </properties>
-  <testcase classname="primkruskal.KekoTest" name="testLuoKeko" time="0.003" />
-  <testcase classname="primkruskal.KekoTest" name="testPrimInsertYksi" time="0.0" />
-  <testcase classname="primkruskal.KekoTest" name="testPrimInsertUseampi" time="0.001" />
-  <testcase classname="primkruskal.KekoTest" name="testInsertSama" time="0.001" />
-  <testcase classname="primkruskal.KekoTest" name="testPrimUpdate" time="0.0" />
-  <testcase classname="primkruskal.KekoTest" name="testPrimUpdateErit" time="0.0" />
-  <testcase classname="primkruskal.KekoTest" name="testPrimUpdatesolmunimella" time="0.001" />
-  <testcase classname="primkruskal.KekoTest" name="testKruskalInsert" time="0.0" />
-  <testcase classname="primkruskal.KekoTest" name="testKruskalInsertMonta" time="0.0" />
-  <testcase classname="primkruskal.KekoTest" name="testKruskalpoista" time="0.006" />
-  <testcase classname="primkruskal.KekoTest" name="testKruskalPoistaMinimi" time="0.001" />
-  <testcase classname="primkruskal.KekoTest" name="SwapTest" time="0.001" />
-  <system-out><![CDATA[lisataan yksi solmu
-lisataan useampi solmu
-[2]0, [3]0, [4]2, [5]2, [6]6, [7]6, [8]8, [9]8, 
-lisataan samoja solmuja
-[2]10, 
-paivitetaan Prim solmuja
-
-solmutunnus on sama, mutta parentti on eri, joten ei pitäisi päivittyä.
-lisataan yksi solmu ja paivitetaan
-[3]4, 
-[3]4, 
-
-lisataan Kruskal kekoon solmu
-
-lisataan Kruskal kekoon solmuja
-Poistetaan Kruskal keosta solmuja
-[2]0, [3]0, [7]0, [9]0, [6]0, [13]0, [8]10, [5]20, [10]20, [11]60, [12]0, [4]10, [14]0, [15]60, 
-Poistettiin: 2
-[7]0, [3]0, [13]0, [9]0, [6]0, [14]0, [8]10, [5]20, [10]20, [11]60, [12]0, [4]10, [15]60, 
-Poistettiin: 7
-[13]0, [3]0, [14]0, [9]0, [6]0, [4]10, [8]10, [5]20, [10]20, [11]60, [12]0, [15]60, 
-Poistettiin: 13
-[14]0, [3]0, [8]10, [9]0, [6]0, [4]10, [15]60, [5]20, [10]20, [11]60, [12]0, 
-Poistettiin: 14
-[12]0, [3]0, [8]10, [9]0, [6]0, [4]10, [15]60, [5]20, [10]20, [11]60, 
-Poistettiin: 12
-[3]0, [6]0, [8]10, [9]0, [11]60, [4]10, [15]60, [5]20, [10]20, 
-Poistettiin: 3
-[6]0, [9]0, [8]10, [10]20, [11]60, [4]10, [15]60, [5]20, 
-Poistettiin: 6
-[9]0, [5]20, [8]10, [10]20, [11]60, [4]10, [15]60, 
-Poistettiin: 9
-[8]10, [5]20, [4]10, [10]20, [11]60, [15]60, 
-Poistettiin: 8
-[4]10, [5]20, [15]60, [10]20, [11]60, 
-Poistettiin: 4
-[5]20, [10]20, [15]60, [11]60, 
-poistetaan kruskal keosta solmu
-[1]2, [2]4, [3]6, [4]8, 
-[1]2, [2]4, [3]6, [4]8, 
-swap test
-[1]2, [2]4, [3]6, [4]8, 
-[2]4, [1]2, [3]6, [4]8, 
+  <testcase classname="primkruskal.VieruslistaTest" name="testVieruslista" time="0.005" />
+  <testcase classname="primkruskal.VieruslistaTest" name="testLisaaKaari" time="0.003" />
+  <testcase classname="primkruskal.VieruslistaTest" name="testHaeKaaret" time="0.004" />
+  <testcase classname="primkruskal.VieruslistaTest" name="testHaeSolmut" time="0.005" />
+  <system-out><![CDATA[vieruslista
+lisaaKaari
+haeKaaret
+2, 1
+3, 5
+haeSolmut
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

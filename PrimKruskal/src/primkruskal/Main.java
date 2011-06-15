@@ -10,20 +10,31 @@ public class Main {
 
 
     public static void main(String[] args) {
-  
-        System.out.println("poistetaan kruskal keosta solmu");
-        Keko instance = new Keko();
+  double aloitusaika=0;
+  double lopetusaika =0;
+  double aika=0;
 
-        for (int i=1; i<14; i++){
-        Solmu uusisolmu = new Solmu();
-        uusisolmu.setEtaisyys(100-(i*4));
-        uusisolmu.setNimi(i);
-        instance.KruskalInsert(uusisolmu);
-        }
-        instance.tulostaKeko();
-        instance.PoistaMinimi();
-        instance.tulostaKeko();
+   System.out.println("Primi laskee verkon:");
+    Prim primi = new Prim();
+    Keko Primalustettu = primi.alustatiedostosta("verkko.txt");
+    aloitusaika = System.currentTimeMillis();
+    primi.laskePrim();
+    lopetusaika = System.currentTimeMillis();
+    aika = lopetusaika-aloitusaika;
+    System.out.println("aikaa kului: " + aika + "millisekuntia");
+    System.out.println("");
+
+    System.out.println("Kruskal laskee verkon");
+    Kruskal kruskali = new Kruskal();
+    Keko Kruskalalustettu = kruskali.alustatiedostosta("verkko.txt");
+    kruskali.SetVerkko(Kruskalalustettu);
+    aloitusaika = System.currentTimeMillis();
+    kruskali.laskeKruskal();
+    lopetusaika = System.currentTimeMillis();
+    aika = lopetusaika-aloitusaika;
+    System.out.println("aikaa kului: " + aika + "millisekuntia");
         
+
     }
 
 }

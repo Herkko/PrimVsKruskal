@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="herkko-desktop" name="primkruskal.KekoTest" tests="12" time="0.075" timestamp="2011-06-15T17:05:47">
+<testsuite errors="0" failures="0" hostname="herkko-desktop" name="primkruskal.PrimTest" tests="2" time="0.082" timestamp="2011-06-15T17:05:48">
   <properties>
     <property name="default.javac.source" value="1.6" />
     <property name="file.encoding.pkg" value="sun.io" />
@@ -220,61 +220,38 @@
     <property name="libs.JWSAntTasks.javadoc" value="" />
     <property name="sun.arch.data.model" value="32" />
   </properties>
-  <testcase classname="primkruskal.KekoTest" name="testLuoKeko" time="0.003" />
-  <testcase classname="primkruskal.KekoTest" name="testPrimInsertYksi" time="0.0" />
-  <testcase classname="primkruskal.KekoTest" name="testPrimInsertUseampi" time="0.001" />
-  <testcase classname="primkruskal.KekoTest" name="testInsertSama" time="0.001" />
-  <testcase classname="primkruskal.KekoTest" name="testPrimUpdate" time="0.0" />
-  <testcase classname="primkruskal.KekoTest" name="testPrimUpdateErit" time="0.0" />
-  <testcase classname="primkruskal.KekoTest" name="testPrimUpdatesolmunimella" time="0.001" />
-  <testcase classname="primkruskal.KekoTest" name="testKruskalInsert" time="0.0" />
-  <testcase classname="primkruskal.KekoTest" name="testKruskalInsertMonta" time="0.0" />
-  <testcase classname="primkruskal.KekoTest" name="testKruskalpoista" time="0.006" />
-  <testcase classname="primkruskal.KekoTest" name="testKruskalPoistaMinimi" time="0.001" />
-  <testcase classname="primkruskal.KekoTest" name="SwapTest" time="0.001" />
-  <system-out><![CDATA[lisataan yksi solmu
-lisataan useampi solmu
-[2]0, [3]0, [4]2, [5]2, [6]6, [7]6, [8]8, [9]8, 
-lisataan samoja solmuja
-[2]10, 
-paivitetaan Prim solmuja
-
-solmutunnus on sama, mutta parentti on eri, joten ei pitäisi päivittyä.
-lisataan yksi solmu ja paivitetaan
+  <testcase classname="primkruskal.PrimTest" name="testLaskePrim" time="0.014" />
+  <testcase classname="primkruskal.PrimTest" name="testAlustatiedostosta" time="0.011" />
+  <system-out><![CDATA[laskePrim
+alku: 1 loppu: 2 paino: 1
+alku: 2 loppu: 3 paino: 4
+alku: 2 loppu: 4 paino: 1
+alku: 1 loppu: 4 paino: 6
+alku: 4 loppu: 5 paino: 3
+alku: 2 loppu: 5 paino: 2
+alku: 3 loppu: 5 paino: 5
+[2]2147483647, [3]2147483647, [4]2147483647, [5]2147483647, 
+[4]6, [3]2147483647, [5]2147483647, 
+2146
+[5]2, [3]4, 
+344152
 [3]4, 
-[3]4, 
+53
 
-lisataan Kruskal kekoon solmu
 
-lisataan Kruskal kekoon solmuja
-Poistetaan Kruskal keosta solmuja
-[2]0, [3]0, [7]0, [9]0, [6]0, [13]0, [8]10, [5]20, [10]20, [11]60, [12]0, [4]10, [14]0, [15]60, 
-Poistettiin: 2
-[7]0, [3]0, [13]0, [9]0, [6]0, [14]0, [8]10, [5]20, [10]20, [11]60, [12]0, [4]10, [15]60, 
-Poistettiin: 7
-[13]0, [3]0, [14]0, [9]0, [6]0, [4]10, [8]10, [5]20, [10]20, [11]60, [12]0, [15]60, 
-Poistettiin: 13
-[14]0, [3]0, [8]10, [9]0, [6]0, [4]10, [15]60, [5]20, [10]20, [11]60, [12]0, 
-Poistettiin: 14
-[12]0, [3]0, [8]10, [9]0, [6]0, [4]10, [15]60, [5]20, [10]20, [11]60, 
-Poistettiin: 12
-[3]0, [6]0, [8]10, [9]0, [11]60, [4]10, [15]60, [5]20, [10]20, 
-Poistettiin: 3
-[6]0, [9]0, [8]10, [10]20, [11]60, [4]10, [15]60, [5]20, 
-Poistettiin: 6
-[9]0, [5]20, [8]10, [10]20, [11]60, [4]10, [15]60, 
-Poistettiin: 9
-[8]10, [5]20, [4]10, [10]20, [11]60, [15]60, 
-Poistettiin: 8
-[4]10, [5]20, [15]60, [10]20, [11]60, 
-Poistettiin: 4
-[5]20, [10]20, [15]60, [11]60, 
-poistetaan kruskal keosta solmu
-[1]2, [2]4, [3]6, [4]8, 
-[1]2, [2]4, [3]6, [4]8, 
-swap test
-[1]2, [2]4, [3]6, [4]8, 
-[2]4, [1]2, [3]6, [4]8, 
+Mistä: 1 Mihin : 2 paino: 1, 
+Mistä: 2 Mihin : 3 paino: 4, 
+Mistä: 2 Mihin : 4 paino: 1, 
+Mistä: 2 Mihin : 5 paino: 2, 
+PrimKeko alustatiedostosta
+alku: 1 loppu: 2 paino: 1
+alku: 2 loppu: 3 paino: 4
+alku: 2 loppu: 4 paino: 1
+alku: 1 loppu: 4 paino: 6
+alku: 4 loppu: 5 paino: 3
+alku: 2 loppu: 5 paino: 2
+alku: 3 loppu: 5 paino: 5
+[2]2147483647, [3]2147483647, [4]2147483647, [5]2147483647, 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
