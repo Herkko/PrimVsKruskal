@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package primkruskal;
 
@@ -13,7 +9,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author herkko
+ * @author Herkko Virolainen
  */
 public class Prim {
 int solmujenmaara;
@@ -31,7 +27,7 @@ public static Scanner lukija = new Scanner(System.in);
     solmujenmaara =  Lista.haeSolmut();
     int indeksi = 1;
     int poistettunimi=1;
-
+    System.out.println("solmujenmaara: " + solmujenmaara);
     while (indeksi<solmujenmaara){
     int[] kaarilista = Lista.haeKaaret(poistettunimi);
 
@@ -48,29 +44,9 @@ public static Scanner lukija = new Scanner(System.in);
     // jolloin voidaan muodostaa tieto siitä mistä ja minne on menty.
     poistettunimi = poistettu.getNimi();
     indeksi++;
-
-//    PrimKeko.tulostaKeko();
-//    for (int i=0; i<kaarilista.length; i++){
-//        System.out.print(kaarilista[i]);
-//    }
-//    System.out.println();
-
+    
     }
-
-
-
-
-
-//    Solmu nulli = PrimKeko.PoistaMinimi();
-//    solmut[0] = nulli;
-//
-//    while(nulli != null ){
-//    nulli = PrimKeko.PoistaMinimi();
-//    if(nulli!= null)  solmut[indeksi] = nulli;
-//    indeksi++;
-//
-//    }
-//    solmujenmaara=indeksi;
+  
     tulostaPrimi();
 
     }
@@ -90,9 +66,7 @@ public static Scanner lukija = new Scanner(System.in);
                 int alkupiste = paloitteleAlku(apurivi, 1);
                 int loppupiste = paloitteleAlku(apurivi, 2);
                 int paino = paloitteleAlku(apurivi, 3);
-              //  System.out.println("alku: " +alkupiste + " loppu: " + loppupiste+ " paino: " +paino);
                 Lista.lisaaKaari(alkupiste, loppupiste, paino);
-
 
             }
 
@@ -109,7 +83,7 @@ public static Scanner lukija = new Scanner(System.in);
        PrimKeko.PrimInsert(uusisolmu);
        }
 
-        //PrimKeko.tulostaKeko();
+        PrimKeko.tulostaKeko();
         solmut = new Solmu[solmumaara+1];
 
         return PrimKeko;

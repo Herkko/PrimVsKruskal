@@ -77,7 +77,7 @@ public class KruskalTest {
     System.out.println("testataan verkon alustus tiedostosta");
 
     Kruskal kruskali = new Kruskal();
-    Keko alustettu = kruskali.alustatiedostosta("verkko.txt");
+    Keko alustettu = kruskali.alustatiedostosta("verkko.txt", 6,6);
     kruskali.SetVerkko(alustettu);
  
 
@@ -89,7 +89,7 @@ public class KruskalTest {
     System.out.println("Alustetaan tiedostosta ja lasketaan");
 
     Kruskal kruskali = new Kruskal();
-    Keko alustettu = kruskali.alustatiedostosta("verkko.txt");
+    Keko alustettu = kruskali.alustatiedostosta("verkko.txt", 6,6);
     kruskali.SetVerkko(alustettu);
     kruskali.laskeKruskal();
 

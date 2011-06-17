@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="herkko-desktop" name="primkruskal.KruskalTest" tests="5" time="0.085" timestamp="2011-06-15T17:05:48">
+<testsuite errors="0" failures="0" hostname="herkko-desktop" name="primkruskal.KruskalTest" tests="5" time="0.081" timestamp="2011-06-17T05:10:50">
   <properties>
     <property name="default.javac.source" value="1.6" />
     <property name="file.encoding.pkg" value="sun.io" />
@@ -92,8 +92,8 @@
     <property name="libs.javac-api.maven-pom" value="" />
     <property name="javadoc.private" value="false" />
     <property name="sun.desktop" value="gnome" />
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
     <property name="build.test.classes.dir" value="build/test/classes" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
     <property name="libs.jaxb.src" value="" />
     <property name="libs.MySQLDriver.javadoc" value="" />
     <property name="netbeans.dynamic.classpath" value="/usr/share/netbeans/6.8/platform11/core/core.jar:/usr/share/netbeans/6.8/platform11/core/org-openide-filesystems.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_ko.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_tr.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_zh_TW.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_sv.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_ja.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_ru.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_zh_TW.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_nl.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_in_ID.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_sv.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_tr.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_ro.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_cs.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_gl_ES.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_ar.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_gl_ES.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_sq.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_ko.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_it.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_zh_CN.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_de.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_it.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_zh_CN.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_cs.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_pt_BR.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_in_ID.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_de.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_ca.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_pt_BR.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_ru.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_ro.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_ca.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_nl.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_sq.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_fr.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_ar.jar:/usr/share/netbeans/6.8/platform11/core/locale/core_es.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_fr.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_ja.jar:/usr/share/netbeans/6.8/platform11/core/locale/org-openide-filesystems_es.jar:/usr/share/netbeans/6.8/nb6.8/core/org-netbeans-upgrader.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_sv.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_zh_CN.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_it.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_nl.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_sv.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_ko.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_ja.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_pt_BR.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_ru.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_ca.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_de.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_pt_BR.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_es.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_de.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_fr.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_ja.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_ru.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_nl.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_es.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_ko.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_it.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_zh_TW.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_gl_ES.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_tr.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_zh_TW.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_fr.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_gl_ES.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_zh_CN.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/core_nb_tr.jar:/usr/share/netbeans/6.8/nb6.8/core/locale/org-netbeans-upgrader_ca.jar" />
@@ -146,8 +146,8 @@
     <property name="libs.junit_4.classpath" value="/usr/share/netbeans/6.8/platform11/modules/ext/junit-4.6.jar:/usr/share/netbeans/6.8/platform11/modules/ext/hamcrest-core.jar" />
     <property name="build.dir" value="build" />
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-6-openjdk/jre/lib/i386" />
-    <property name="sun.management.compiler" value="HotSpot Tiered Compilers" />
     <property name="libs.swing-app-framework.classpath" value="/usr/share/netbeans/6.8/java3/modules/ext/appframework-1.0.3.jar:/usr/share/netbeans/6.8/java3/modules/ext/swing-worker-1.1.jar" />
+    <property name="sun.management.compiler" value="HotSpot Tiered Compilers" />
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
     <property name="javadoc.encoding.used" value="UTF-8" />
     <property name="javadoc.windowtitle" value="" />
@@ -170,17 +170,16 @@
     <property name="org.xml.sax.driver" value="com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser" />
     <property name="java.vm.vendor" value="Sun Microsystems Inc." />
     <property name="libs.absolutelayout.maven-pom" value="" />
-    <property name="user.dir" value="/home/herkko/Asiakirjat/käpistely/TiraLabra/PrimKruskal" />
     <property name="org.openide.TopManager.GUI" value="true" />
+    <property name="user.dir" value="/home/herkko/Asiakirjat/käpistely/TiraLabra/PrimKruskal" />
     <property name="debug-transport" value="dt_socket" />
     <property name="ant.file.PrimKruskal-impl" value="/home/herkko/Asiakirjat/käpistely/TiraLabra/PrimKruskal/nbproject/build-impl.xml" />
     <property name="application.args" value="" />
     <property name="sun.cpu.endian" value="little" />
     <property name="compile.on.save" value="true" />
     <property name="endorsed.classpath.cmd.line.arg" value="-Xbootclasspath/p:&apos;/home/herkko/Asiakirjat/käpistely/TiraLabra/PrimKruskal/${endorsed.classpath}&apos;" />
-    <property name="netbeans.automatic.build" value="true" />
-    <property name="libs.MySQLDriver.src" value="" />
     <property name="java.vm.version" value="19.0-b09" />
+    <property name="libs.MySQLDriver.src" value="" />
     <property name="java.class.path" value="/home/herkko/Asiakirjat/käpistely/TiraLabra/PrimKruskal/build/classes:/usr/share/netbeans/6.8/platform11/modules/ext/junit-4.6.jar:/usr/share/netbeans/6.8/platform11/modules/ext/hamcrest-core.jar:/home/herkko/Asiakirjat/käpistely/TiraLabra/PrimKruskal/build/test/classes:/usr/share/netbeans/6.8/java3/ant/lib/junit.jar:/usr/share/netbeans/6.8/java3/ant/lib/ant-launcher.jar:/usr/share/netbeans/6.8/java3/ant/lib/ant.jar:/usr/share/netbeans/6.8/java3/ant/lib/ant-junit.jar" />
     <property name="os.arch" value="i386" />
     <property name="javac.deprecation" value="false" />
@@ -195,8 +194,8 @@
     <property name="do.depend" value="false" />
     <property name="file.separator" value="/" />
     <property name="java.runtime.version" value="1.6.0_20-b20" />
-    <property name="debug.test.classpath" value=":build/classes:/usr/share/netbeans/6.8/platform11/modules/ext/junit-4.6.jar:/usr/share/netbeans/6.8/platform11/modules/ext/hamcrest-core.jar:build/test/classes" />
     <property name="sun.boot.class.path" value="/home/herkko/Asiakirjat/käpistely/TiraLabra/PrimKruskal/${endorsed.classpath}:/usr/lib/jvm/java-6-openjdk/jre/lib/resources.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/jsse.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/jce.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/charsets.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/netx.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/plugin.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/rhino.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-openjdk/jre/classes" />
+    <property name="debug.test.classpath" value=":build/classes:/usr/share/netbeans/6.8/platform11/modules/ext/junit-4.6.jar:/usr/share/netbeans/6.8/platform11/modules/ext/hamcrest-core.jar:build/test/classes" />
     <property name="javax.accessibility.assistive_technologies" value="org.GNOME.Accessibility.JavaBridge" />
     <property name="libs.beans-binding.classpath" value="/usr/share/netbeans/6.8/java3/modules/ext/beansbinding-1.2.1.jar" />
     <property name="have.tests" value="true" />
@@ -206,12 +205,12 @@
     <property name="libs.javac-api.classpath" value="/usr/share/netbeans/6.8/java3/modules/ext/javac-api-nb-7.0-b07.jar" />
     <property name="user.country" value="FI" />
     <property name="javadoc.notree" value="false" />
-    <property name="javadoc.additionalparam" value="" />
     <property name="javac.classpath" value="" />
+    <property name="javadoc.additionalparam" value="" />
     <property name="default.javac.target" value="1.6" />
     <property name="build.classes.dir" value="build/classes" />
-    <property name="libs.swing-layout.javadoc" value="" />
     <property name="libs.swing-layout.src" value="" />
+    <property name="libs.swing-layout.javadoc" value="" />
     <property name="java.vendor" value="Sun Microsystems Inc." />
     <property name="javac.target" value="1.5" />
     <property name="runtime.encoding" value="UTF-8" />
@@ -220,11 +219,11 @@
     <property name="libs.JWSAntTasks.javadoc" value="" />
     <property name="sun.arch.data.model" value="32" />
   </properties>
-  <testcase classname="primkruskal.KruskalTest" name="testPaloitteluFunktio" time="0.005" />
-  <testcase classname="primkruskal.KruskalTest" name="testPaloitteluFunktioToka" time="0.001" />
-  <testcase classname="primkruskal.KruskalTest" name="testPaloitteluFunktioKolmas" time="0.0" />
-  <testcase classname="primkruskal.KruskalTest" name="testAlustusTiedostosta" time="0.006" />
-  <testcase classname="primkruskal.KruskalTest" name="testLaskeKruskal" time="0.001" />
+  <testcase classname="primkruskal.KruskalTest" name="testPaloitteluFunktio" time="0.007" />
+  <testcase classname="primkruskal.KruskalTest" name="testPaloitteluFunktioToka" time="0.003" />
+  <testcase classname="primkruskal.KruskalTest" name="testPaloitteluFunktioKolmas" time="0.002" />
+  <testcase classname="primkruskal.KruskalTest" name="testAlustusTiedostosta" time="0.011" />
+  <testcase classname="primkruskal.KruskalTest" name="testLaskeKruskal" time="0.006" />
   <system-out><![CDATA[testataan paloittelufunktion eka osa
 123
 testataan paloittelufunktion toka osa
@@ -232,14 +231,7 @@ testataan paloittelufunktion toka osa
 testataan paloittelufunktion kolmas osa
 678
 testataan verkon alustus tiedostosta
-[1]1, [4]3, [2]1, [1]6, [2]4, [2]2, 
 Alustetaan tiedostosta ja lasketaan
-[1]1, [4]3, [2]1, [1]6, [2]4, [2]2, 
-Pienin virittävä puu
-Mistä: 1 Mihin : 2 paino: 1, 
-Mistä: 2 Mihin : 4 paino: 1, 
-Mistä: 2 Mihin : 5 paino: 2, 
-Mistä: 2 Mihin : 3 paino: 4, 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

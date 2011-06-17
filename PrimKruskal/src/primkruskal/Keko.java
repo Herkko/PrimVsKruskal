@@ -2,18 +2,18 @@ package primkruskal;
 
 /**
  *
- * @author Herkko
+ * @author Herkko Virolainen
  */
 public class Keko {
 
-    Solmu[] keko = new Solmu[100];
+    Solmu[] keko = new Solmu[1000000];
     int top;
     int heapSize;
-    Solmu[] solmulista = new Solmu[1000];
+    Solmu[] solmulista = new Solmu[10001];
     int solmujenmaara = 0;
 
     public void Keko() {
-        heapSize = 1000;
+        heapSize = 10001;
         keko = new Solmu[heapSize];
         top = 0;
         solmulista = new Solmu[heapSize];
@@ -23,14 +23,6 @@ public class Keko {
         keko[0] = parent;
     }
 
-//    public void Keko(int maara) {
-//        heapSize = maara;
-//        keko = new Solmu[heapSize];
-//        top = 0;
-//        solmulista = new Solmu[heapSize];
-//    }
-
-
     public Solmu PoistaMinimi() {
      if(top==0)return null;
         Solmu minimi = keko[1];
@@ -38,11 +30,12 @@ public class Keko {
         keko[1] = keko[top];
         
 
-        //Toimiiko oikeasti?
+     
         int poistettava = minimi.tunnus;
         solmulista[poistettava] = null;
         heapify(1);
 
+       // tulostaKeko();
         return minimi;
     }
 
@@ -50,9 +43,7 @@ public class Keko {
     public void heapify(int indeksi) {
 
         if ((indeksi * 2 + 1) < top) {
-            //tarkistettava ettei tule nullpointteri, kun menee yli
-
-            //etsitään indeksit
+         
             int vasemmankoko = (keko[(indeksi * 2)]).getEtaisyys();
             int oikeankoko = (keko[(indeksi * 2 + 1)]).getEtaisyys();
             int tarkistettavasolmu = (keko[indeksi]).getEtaisyys();
@@ -78,8 +69,7 @@ public class Keko {
             if (tarkistettavasolmu > vasemmankoko) {
                 
                 swap(indeksi, (indeksi*2));
-                //tahan ei varmaan tarvitse enaa heapifya, koska oikeaa lastakaan ei ole.
-            }
+           }
 
         }
 
@@ -87,14 +77,6 @@ public class Keko {
 
     public void PrimInsert(Solmu uusisolmu) {
         int solmuTunnus = uusisolmu.getNimi();
-
-
-        //eipä taida toimia vielä ihan oikeinn.
-//        if (solmulista[solmuTunnus] != null && solmulista[uusisolmu.getParentTunnus()]!=null ) {
-//            updateSolmu(uusisolmu);
-//        }
-//
-//        else {
 
             if (solmujenmaara > 1) {
                 
@@ -127,8 +109,6 @@ public class Keko {
             }
         }
     
-    //}
-
     public void KruskalInsert(Solmu uusisolmu){
     this.top++;
     keko[top] = uusisolmu;
@@ -155,10 +135,8 @@ public class Keko {
         Solmu valiaikainenLapsi = keko[lapsi];
         Solmu valiaikainenSolmu = keko[solmu];
 
-        valiaikainenLapsi.setPaikkakeossa(solmu); //paivitetaan paikkakeossa arvoa.
+        valiaikainenLapsi.setPaikkakeossa(solmu); 
         valiaikainenSolmu.setPaikkakeossa(lapsi);
-
-        //paivitettava vielä parent arvot
 
         keko[lapsi] = valiaikainenSolmu;
         keko[solmu] = valiaikainenLapsi;
@@ -176,10 +154,11 @@ public class Keko {
         System.out.println();
     }
 
+    // tätä ei tässä versiossa oikeasti edes käytetä missään vaiheessa.
     public void updateSolmu(Solmu solmu) {
         int solmutunnus = solmu.getNimi();
         Solmu paivitettava = solmulista[solmutunnus];
-        int paivitettavaEtaisyys = solmu.getEtaisyys(); // tällä hetkellä ei saa oikeaa viitettä taulukosta
+        int paivitettavaEtaisyys = solmu.getEtaisyys(); 
         int uusietaisyys = paivitettava.getEtaisyys();
 
 

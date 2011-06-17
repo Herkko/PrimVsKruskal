@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package primkruskal;
 
 import java.util.Scanner;
@@ -11,11 +8,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author hjvirola
- * Luokassa ei vielä toimi kunnolla erillaisten verkkojen tunnistaminen ja
- * muutamassa kohdassa koodiin joutuu editoimaan minkälainen verkko on kyseessä
- *
- *
+ * @author Herkko Virolainen
  */
 public class Kruskal {
 
@@ -29,17 +22,18 @@ public class Kruskal {
     public void Kruskal() {
     }
 
+    //Alusta metodia käytetään jos halutaan lisätä käsin jokin verkko
     public Keko alusta() {
 
         /* tehdään kysely kuinka monta solmua halutaan lisätä
         ja sitten sen mukaan tehdään taulu ja sitten voi lisätä niin monta solmua
         kuin haluaa?
+         *
          */
         System.out.println("kuinka monta solmua haluat lisätä? ");
         int[] KruskalLista = new int[5];
         solmujenmaara = 5;
 
-        // lisätään ensin kekoon solmuja.. vaihda whileksi
         for (int i = 0; i < 10; i++) {
             Solmu lisattava = uusiKaari();
             KruskalKeko.KruskalInsert(lisattava);
@@ -48,7 +42,7 @@ public class Kruskal {
         return KruskalKeko;
     }
 
-    public Keko alustatiedostosta(String tiedosto) {
+    public Keko alustatiedostosta(String tiedosto, int maara, int tiheys) {
         Keko Kruskali = new Keko();
         File tiedostosta = new File(tiedosto);
         Scanner syottotiedosto;
@@ -67,16 +61,16 @@ public class Kruskal {
                 uusisolmu.setEtaisyys(paino);
 
                 Kruskali.KruskalInsert(uusisolmu);
-                //solmujenmaara++;
+             
             }
 
         } catch (FileNotFoundException ex) {
             Logger.getLogger(Kruskal.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        //Tällä hetkellä vitonen tulee suoraa.. keksittävä tapa miten sen voi säätää
-        pala = new int[6];
-        solmut = new Solmu[6];
+       
+        pala = new int[maara];
+        solmut = new Solmu[maara*tiheys];
 
      //   Kruskali.tulostaKeko();
         return Kruskali;
@@ -90,7 +84,7 @@ public class Kruskal {
 
     public void laskeKruskal() {
         int tyhjat = pala.length;
-        tyhjat--; //koska nollaa ei hyväksytä solmuksi selvyyden vuoksi.
+        tyhjat--; 
 
 
         while (tyhjat > 0) {
@@ -124,7 +118,7 @@ public class Kruskal {
 
             // tapaus jossa verkot kuuluvat jo samaan palaseen
             else if (pala[solmuNimi] != 0 && pala[solmuParentNimi] != 0 && solmuNimi == solmuParentNimi) {
-                // tarvitseeko tehdä mitään?
+                
             } else if (pala[solmuNimi] == 0 && pala[solmuParentNimi] == 0) {
                 pala[solmuNimi] = solmuNimi;
                 pala[solmuParentNimi] = solmuNimi;
@@ -146,7 +140,7 @@ public class Kruskal {
 
         }
 
-           tulostaKruskal();
+          // tulostaKruskal();
 
     }
 
@@ -169,7 +163,7 @@ public class Kruskal {
     private void yhdista(int arvo, int yhdistettavat) {
         for (int i = 0; i < pala.length; i++) {
             if (pala[i] == yhdistettavat) {
-                solmujenmaara--; // ei toimi näin :(
+                solmujenmaara--; 
                 pala[i] = arvo;
             }
         }
